@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+	<globalevent name="save" interval="900000" event="script" value="save.lua"/>
+	<globalevent name="clean" interval="7200000" event="script" value="clean.lua"/>
+	<globalevent name="shop" interval="30" script="shop.lua"/>
+	<globalevent name="OakThink" interval="5000" event="script" value="DemonOakThink.lua"/>
+
+	<globalevent name="init" type="startup" event="script" value="init.lua"/>
+	<globalevent name="globalsave" type="globalsave" event="script" value="init.lua"/>
+	<globalevent name="record" type="record" event="script" value="record.lua"/>
+	<globalevent name="RashidUP" type="startup" event="script" value="rashidup.lua"/>
+	<globalevent name="Rashid" time="23:59:59" event="script" value="rashid.lua"/>
+
+	<globalevent name="raids" interval="60000" event="script" value="raid.lua"/>
+	<!--<globalevent name="website_shop_item_delivery" interval="30000" event="script" value="shop.lua"/>-->
+	
+</globalevents>

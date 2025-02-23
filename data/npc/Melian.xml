@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Melian" script="data/npc/scripts/Melian.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="146" head="97" body="22" legs="45" feet="76" addons="0"/>
+<voices>
+<voice text="Feel the wind in your hair during one of my carpet rides!" interval2="100" margin="1" yell="no"/>
+</voices>
+<parameters>
+<parameter key="module_keywords" value="1" />
+        <parameter key="keywords" value="fly;" />
+        <parameter key="keyword_reply1" value="I can fly you to the {Femor Hills}, to {Edron}, to {Darashia} and to {Svargrond} if you like. Where do you want to go?" />
+        <parameter key="message_greet" value="Ah, the wind brings in another visitor. Feel welcome |PLAYERNAME|. Where do you want me to {fly} you?"/>
+        <parameter key="message_farewell" value="Good bye!"/>
+	<parameter key="message_walkaway" value="Good bye!" />
+</parameters>
+</npc>

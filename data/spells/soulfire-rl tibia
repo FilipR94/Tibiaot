@@ -1,0 +1,20 @@
+local combat = createCombatObject()
+setCombatParam(combat, COMBAT_PARAM_TARGETCASTERORTOPMOST, true)
+setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_FIREDAMAGE)
+setCombatParam(combat, COMBAT_PARAM_EFFECT, CONST_ME_HITBYFIRE)
+setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_FIRE)
+ 
+local condition = {}
+ 
+for lvl = 1, 400 do
+	condition[lvl] = {}
+	for mag = 0, 200 do
+		condition[lvl][mag] = createConditionObject(CONDITION_FIRE)
+		setConditionParam(condition[lvl][mag], CONDITION_PARAM_DELAYED, 1)
+		addDamageCondition(condition[lvl][mag], 5, 2000, -math.ceil(lvl / 3 + mag / 3))
+	end
+end
+ 
+function onCastSpell(cid, var)
+	return doCombat(cid, combat, var) and doAddCondition(variantToNumber(var), condition[getPlayerLevel(cid)][getPlayerMagLevel(cid)])
+end

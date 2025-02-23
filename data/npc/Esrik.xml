@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Esrik" script="data/npc/scripts/Esrik.lua" walkinterval="2000" floorchange="0">
+<health now="185" max="185"/>
+<look type="71" head="0" body="0" legs="0" feet="0" addons="0"/>
+
+
+<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="axe, 2386, 20;battle hammer, 2417, 350;brass armor, 2465, 450;chain armor, 2464, 200;
+			chain helmet, 2458, 52;
+			chain legs, 2648, 80;
+			dagger, 2351, 5;
+			hand axe, 2380, 8;
+			leather armor, 2467, 35;
+			leather helmet, 2461, 12;
+			mace, 2398, 90;
+			rapier, 2384, 15;
+			sabre, 2385, 35;
+			spear, 2389, 10;
+			steel shield, 2509, 240;
+			sword, 2376, 85;
+			throwing knife, 2410,25;
+			wooden shield, 2512,15;
+			twin hooks, 11303, 1100;
+			zaoan halberd, 11317, 1200;
+			lizard weapon rack kit, 11122, 500;"/>
+		<parameter key="shop_sellable" value="wooden shield, 2512, 15;
+			brass armor,2465,150;
+			chain armor, 2464, 70;
+			chain helmet, 2458,17;
+			chain legs, 2648, 25;
+			hand axe, 2380, 4;
+			leather armor, 2467,12;
+			mace, 2398, 30;
+			rapier, 2384, 5;
+			sabre, 2385,  12;
+			spear, 2389, 3;
+			steel shield, 2509,80;
+			sword, 2376,25;
+			wooden shield, 2512,3;
+						
+
+			battle axe, 2378, 80;
+			battle shield, 2513,95;
+			halberd, 2381, 400;
+			morning star, 2394, 90;
+			plate armor, 2463,400;
+			steel helmet, 2457,190;
+			two handed sword, 2377, 450;
+			
+			twin hooks, 11303,  500;
+			zaoan halberd, 11317,500;
+			
+			broken halberd, 11329, 100;
+			cursed shoulder spikes, 11321, 320;
+			drachaku, 11302, 10000;
+			drakinata, 11299, 10000;
+			draken boots, 12621, 40000;
+			guardian boots, 11234, 35000;
+			high guard's shoulderplates, 11327, 130;
+			legionnaire flags, 11328, 500;
+			sais, 11300, 16500;
+			spiked iron ball, 11319, 100;
+			trashed draken boots, 12607, 40000;
+			twiceslicer, 12574, 28000;
+			wailing widow's necklace, 11323, 3000;
+			zaoan armor, 11295, 14000;
+			zaoan helmet, 11296, 45000;
+			zaoan legs, 11298, 14000;
+			zaoan shoes, 11297,5000;
+			zaoan sword, 11301,30000;
+			zaogun's shoulderplates, 11325, 150;"/>     		
+		<parameter key="message_greet" value="Hello. How may I help you |PLAYERNAME|? Ask me for a {trade} if you want to buy something."/>
+      		<parameter key="message_farewell" value="It was a pleasure to help you, |PLAYERNAME|."/>
+		<parameter key="message_walkaway" value="Good bye." />
+		</parameters>
+
+			
+
+
+</npc>
+
